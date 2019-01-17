@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<taglib>
+	<tlibversion>1.2</tlibversion>
+	<jspversion>2.0</jspversion>
+	<shortname>McGraw-Hill Education</shortname>
+	<info>Simple Tag Demos</info>
+
+  <tag>
+    <name>simpleTag</name>
+ 	<tag-class>demo.SimpleTag</tag-class>
+    <body-content>empty</body-content>
+    <info>	This is a simple tag</info>
+ </tag>
+
+  <tag>
+    <name>simpleTag2</name>
+ 	<tag-class>demo.SimpleTag2</tag-class>
+    <body-content>empty</body-content>
+    <info>	This is a simple tag</info>
+ </tag>
+  <tag>
+    <name>simpleTag3</name>
+ 	<tag-class>demo.SimpleTag3</tag-class>
+    <body-content>empty</body-content>
+    <info>	This is a simple tag</info>
+ </tag>
+
+  <tag>
+    <name>bodyTag</name>
+ 	<tag-class>demo.BodyTag </tag-class>
+    <body-content>scriptless</body-content>
+    <info>	This is a body tag</info>
+ </tag>
+
+
+  <tag>
+    <name>bodyScriptingTag</name>
+ 	<tag-class>demo.BodyScriptingTag </tag-class>
+    <body-content>JSP</body-content>
+    <info>	This is a body tag</info>
+ </tag>
+ 
+<tag>
+    <name>attributeTag</name>
+ 	<tag-class>demo.AttributeTag</tag-class>
+     <body-content>scriptless</body-content>
+    <info>	This is a body tag</info>
+	  <attribute>
+    	  <name>title</name>
+      	  <required>true</required>
+          <rtexprvalue>true</rtexprvalue>
+      </attribute>
+ </tag>
+<tag>
+    <name>classicalTag</name>
+ 	<tag-class>demo.ClassicalTag</tag-class>
+     <body-content>JSP</body-content>
+    <info>	This is a body tag</info>
+     <attribute>
+    	  <name>tier</name>
+      	  <required>true</required>
+          <rtexprvalue>true</rtexprvalue>
+      </attribute>
+</tag>
+<tag>
+<name>welcome</name>
+<tag-class>demo.WelcomeGreeter</tag-class>
+<body-content>JSP</body-content>
+<attribute>
+<name>count</name>
+<required>true</required>
+<rtexprvalue>true</rtexprvalue>
+</attribute>
+</tag>
+</taglib>
